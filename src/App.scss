@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Taviraj&display=swap');
+
+:root {
+    --ion-color-tertiary: linear-gradient(rgb(255, 72, 72), rgb(120, 208, 246));
+    --ion-color-primary: rgba(46, 46, 46, 0.89);
+    --ion-color-white: rgb(255, 255, 255);
+    --ion-color-secondary-contrast: #c7d8ee;
+    --ion-color-secondary-contrast-rgb: 255, 255, 255;
+    --ion-color-secondary-shade: #c9e9c9;
+    --ion-color-secondary-tint: #a1e4a1;
+    --color: rgb(175, 0, 0);
+
+}
+
+ion-header {
+    ion-toolbar {
+        --ion-safe-area-top: 0px
+    }
+}
+
+:host {
+    --color: black;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    background-size: cover;
+    bottom: -19%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(7deg, rgba(2, 0, 36, 1) 0%, rgba(52, 52, 150, 0.9444152661064426) 77%, rgba(0, 212, 255, 1) 100%);
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        bottom: -6.5vh;
+        height: 100%;
+        z-index: 0;
+    }
+}
+body {
+    font-family: 'Taviraj', serif;
+}

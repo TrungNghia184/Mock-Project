@@ -1,0 +1,206 @@
+#dark .newsContainer {
+    background: rgb(26, 19, 80);
+    background: radial-gradient(circle, rgba(26, 19, 80, 1) 30%, rgba(62, 1, 113, 1) 47%, rgba(33, 22, 79, 1) 61%);
+    .main-news-container {
+        background-color: rgba(46, 0, 46, 0.759);
+    }
+    .related-news-container {
+        background-color: #130029;
+        background: none;
+        color: white;
+        .related-news {
+            color: white;
+        }
+    }
+}
+.newsContainer {
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    margin-top: 10vh;
+    position: absolute;
+    top: -3.5vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(17deg, rgba(2, 0, 36, 1) 0%, rgba(52, 52, 150, 0.9444152661064426) 77%, rgba(0, 212, 255, 1) 100%);
+    background-size: cover;
+
+    h2:first-of-type {
+        margin: 1vh auto;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        background-color: rgba(242, 76, 57, 0.941);
+    }
+
+    h2:nth-of-type(2) {
+        background-color: wheat;
+        text-align: center;
+        color: black;
+        padding: 5px 0px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 35vh;
+        border-radius: 10px;
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 0;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+            h3 {
+                margin: 0px;
+                padding: 0px 10px;
+                text-align: center;
+                color: white;
+                background-color: rgba(109, 109, 109, 0.727);
+                border-radius: 5px;
+                position: relative;
+                top: 50%;
+            }
+
+            h4 {
+                margin: 0px;
+                color: white;
+                background-color: rgba(109, 109, 109, 0.912);
+                border-radius: 5px;
+                padding: 15px 15px;
+                position: relative;
+                bottom: 68%;
+            }
+        }
+
+        .swiper-button-next {
+            color: white;
+        }
+
+        .swiper-button-prev {
+            color: white;
+        }
+    }
+
+    .related-news-container {
+        width: 80%;
+        margin: 20px auto;
+        color: black;
+        text-align: center;
+        box-shadow: 1px 5px 15px 5px #cbcbcb;
+        background: rgb(238, 174, 202);
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+        a {
+            text-decoration: none;
+
+            .related-news {
+                padding-top: 5px;
+                border-bottom: 1px solid white;
+                color: black;
+                padding: 0px 5px;
+            }
+
+            .related-news:hover {
+                position: relative;
+                top: 5px;
+                left: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 675px) {
+    .newsContainer {
+        top: -10vh;
+
+        h2:first-of-type {
+            margin-top: 10vh;
+            padding: 5px 0px;
+        }
+
+        .swiper {
+            margin-top: 2vh;
+            width: 70%;
+            height: 50vh;
+
+            .swiper-slide {
+                h3 {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+
+        .related-news-container {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+
+            a {
+                flex: 1 1 45%;
+
+                .related-news {
+                    height: 600px;
+
+                    img {
+                        height: 300px;
+                    }
+
+                    h3 {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .newsContainer {
+        padding: 0px 10%;
+
+        .main-news-container {
+            width: 90.3%;
+            margin: 0 auto;
+            background-color: #c8c8c8a1;
+            .swiper {
+
+                .swiper-slide {
+                    h4 {
+                        bottom: 90%;
+                    }
+
+                    h3 {
+                        top: 70%;
+                        z-index: 2;
+                        width: 90%;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 90%;
+                        position: relative;
+                        bottom: 7%;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        h2 {
+            width: 90.3%;
+            margin: 0 auto;
+        }
+
+        h2:nth-of-type(2) {
+            margin-top: 20px;
+        }
+
+
+    }
+}

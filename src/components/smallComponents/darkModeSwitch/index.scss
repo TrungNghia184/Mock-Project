@@ -1,0 +1,13 @@
+.switch {
+    width: fit-content;
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    left: calc(100% - 200px);
+}
+@media screen and (max-width: 767px) {
+    .switch {
+        top: 5px;
+        left: calc(100% - 60px);
+    }
+}
